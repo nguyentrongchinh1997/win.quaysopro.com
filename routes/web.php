@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', 'HomeController@home')->name('home');
 Route::get('/import', 'HomeController@importForm')->name('import-form');
 Route::post('/store-import', 'HomeController@import')->name('import');

@@ -14,8 +14,11 @@
         {{-- <link rel="stylesheet" href="{{asset('css/dataTables.bootstrap4.css')}}"> --}}
         <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css"/>
         <script type="text/javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+        <meta name="csrf-token" content="{{ csrf_token() }}" />
+
     </head>
     <body>
         @yield('content')
     </body>
+    @yield('js')
 </html>

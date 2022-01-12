@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'UTM Futura Extra';
+    src: local('UTM Futura Extra'), local('UTMFuturaExtra'),
+        url('/fonts/UTMFuturaExtra.woff2') format('woff2'),
+        url('/fonts/UTMFuturaExtra.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UTM Impact';
+    src: local('UTM Impact'), local('UTMImpact'),
+        url('../fonts/UTMImpact.woff2') format('woff2'),
+        url('../fonts/UTMImpact.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.row {
+    margin: 0px !important;
+}
+body {
+    font-family: 'UTM Impact';
+    margin: 0;
+    background: #89271f;
+}
+
+.slot_upload input[type="file"] {
+    display: none;
+}
+
+.slot_upload label {
+    margin: 50px auto;
+    display: block;
+    line-height: 60px;
+    background: #f2c808;
+    width: 190px;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.slot_inner {
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+body {
+    overflow-x: hidden;
+}
+
+.slot_box {
+    position: relative;
+    /* width: 700px; */
+    width: 100%;
+    height: 220px;
+    background: url(../img/box.png);
+    background-repeat: no-repeat;
+    /* background-size: 700px 395px; */
+    background-size: contain;
+}
+
+.slot_logo {
+    padding-top: 100px;
+    margin: 0 auto;
+    width: 250px;
+}
+
+.slot_logo img {
+    height: auto;
+    width: 100%;
+}
+
+.winner_text {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    height: 80px;
+    left: 0px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.winner_text.blur {
+    color: transparent;
+    text-shadow: 0 0 10px rgb(255 255 255 / 50%);
+}
+
+#slotwrapper {
+    /* width: 521px;
+    position: absolute;
+    top: 151px;
+    height: 109px;
+    left: 92px;
+    display: flex; */
+    width: 264px;
+    position: absolute;
+    top: 81px;
+    height: 62px;
+    left: 46px;
+    display: flex;
+}
+
+#slotwrapper .slot_item {
+    overflow: hidden;
+    display: inline-block;
+    width: calc(100% / 7);
+    height: 62px;
+}
+#slotwrapper ul {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#slotwrapper ul li {
+    font-family: 'UTM Futura Extra';
+    font-size: 30px;
+    line-height: 62px;
+    text-align: center;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+#slot_screen {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/background.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+

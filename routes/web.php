@@ -18,3 +18,7 @@ Route::get('/get-number', 'HomeController@getNumber')->name('get-number');
 Route::post('/update-code', 'HomeController@updateCode')->name('update-code');
 Route::get('/reset', 'HomeController@reset')->name('reset');
 Route::get('/remove', 'HomeController@remove')->name('remove');
+Route::get('/plt', 'HomeController@plt'); // quay số phúc lộc thọ
+Route::post('/import-plt', 'HomeController@importPlt')->name('import-plt');
+Route::post('/spin', 'HomeController@spin');
+Route::get('/plt2', 'HomeController@plt2');
